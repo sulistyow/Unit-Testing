@@ -13,10 +13,10 @@
         android:text="@string/length" />
 
     <EditText
-        android:id="@+id/et_length"
+        android:id="@+id/edt_length"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/size_large"
+        android:layout_marginBottom="16dp"
         android:inputType="numberDecimal"
         android:lines="1" />
 
@@ -26,10 +26,10 @@
         android:text="@string/width" />
 
     <EditText
-        android:id="@+id/et_width"
+        android:id="@+id/edt_width"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/size_large"
+        android:layout_marginBottom="16dp"
         android:inputType="numberDecimal"
         android:lines="1" />
 
@@ -39,10 +39,10 @@
         android:text="@string/heigh" />
 
     <EditText
-        android:id="@+id/et_heigh"
+        android:id="@+id/edt_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/size_large"
+        android:layout_marginBottom="16dp"
         android:inputType="numberDecimal"
         android:lines="1" />
 
@@ -55,16 +55,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/size_large"
+        android:layout_marginBottom="16dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_calculate_volume"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:visibility="gone"
             android:text="@string/calculate_volume"
-            android:layout_height="wrap_content"/>
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/btn_calculate_circumference"
@@ -83,8 +83,8 @@
             android:layout_weight="1"
             android:text="@string/calculate_surface_area"
             android:visibility="gone" />
-
     </LinearLayout>
+
 
     <TextView
         android:id="@+id/tv_result"
